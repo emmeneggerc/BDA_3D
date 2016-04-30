@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<JScopeProject>
+    <FileVersion major="1" minor="1" />
+    <Project>
+        <Configuration>
+            <JLink>
+                <Options IsRTTSession="0" IsRTTWithTimeStamp="1" SamplingPeriod="20000" Connection="1" SerialNo="0" IP="" TargetDevice="unspecified" TargetInterface="SWD" InterfaceSpeed="4000" />
+            </JLink>
+            <ElfFile Name="C:\Users\Cornel\Documents\BDA_3D\Debug\BDA_3D.elf" />
+            <DataFile Name="" />
+            <RawFile Name="" />
+            <Scope>
+                <Options TimeResolutionUs="1000000" />
+            </Scope>
+        </Configuration>
+        <Windows>
+            <Graph Show="1" />
+            <Watch Show="1" />
+        </Windows>
+        <SelectedSymbols />
+    </Project>
+</JScopeProject>
