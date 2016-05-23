@@ -1,4 +1,5 @@
 Sources/FDC1004.o: ../Sources/FDC1004.c ../Sources/FDC1004.h \
+ ../Sources/Detection.h \
  C:/Users/Cornel/Documents/BDA_3D/Generated_Code/GI2C1.h \
  C:/Users/Cornel/Documents/BDA_3D/Generated_Code/PE_Types.h \
  C:/Users/Cornel/Documents/BDA_3D/Generated_Code/PE_Error.h \
@@ -27,6 +28,8 @@ Sources/FDC1004.o: ../Sources/FDC1004.c ../Sources/FDC1004.h \
  C:/Users/Cornel/Documents/BDA_3D/Generated_Code/timers.h
 
 ../Sources/FDC1004.h:
+
+../Sources/Detection.h:
 
 C:/Users/Cornel/Documents/BDA_3D/Generated_Code/GI2C1.h:
 

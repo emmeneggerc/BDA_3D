@@ -730,7 +730,7 @@ PE_DEBUGHALT();
     </Events>
   </Bean>
   <Bean name="TMOUT1" type="Timeout">
-    <Enabled v="N" />
+    <Enabled v="Y" />
     <Template v="Timeout" />
     <Properties>
       <Component_name v="TMOUT1" />
@@ -753,7 +753,7 @@ PE_DEBUGHALT();
     </Events>
   </Bean>
   <Bean name="FRTOS1" type="FreeRTOS">
-    <Enabled v="N" />
+    <Enabled v="Y" />
     <Properties>
       <Component_name v="FRTOS1" />
       <RTOS_Version v="V8.2.2" />
@@ -952,6 +952,34 @@ PE_DEBUGHALT();
       </event>
       <event name="vOnPreSleepProcessing" v="don&amp;apos;t generate code" />
       <event name="vOnPostSleepProcessing" v="don&amp;apos;t generate code" />
+    </Events>
+  </Bean>
+  <Bean name="RNG1" type="RingBuffer">
+    <Enabled v="Y" />
+    <Properties>
+      <Component_name v="RNG1" />
+      <Reentrant v="yes" />
+      <Critical_Section v="CS1" />
+      <Buffer_Size v="1" />
+      <Element_Size v="1 Byte" />
+    </Properties>
+    <Methods>
+      <Clear v="generate code" />
+      <Put v="generate code" />
+      <Get v="generate code" />
+      <Peek v="generate code" />
+      <NofElements v="generate code" />
+      <NofFreeElements v="generate code" />
+      <Deinit v="generate code" />
+      <Init v="generate code" />
+    </Methods>
+    <Events>
+      <Event_module_name v="Events" />
+      <event name="OnBufferFull" v="don&amp;apos;t generate code" />
+      <event name="OnBufferEmpty" v="don&amp;apos;t generate code" />
+      <event name="OnItemPut" v="don&amp;apos;t generate code" />
+      <event name="OnItemGet" v="don&amp;apos;t generate code" />
+      <event name="OnClear" v="don&amp;apos;t generate code" />
     </Events>
   </Bean>
 </PE_PROJECT_SETTINGS_DOCUMENTATION>

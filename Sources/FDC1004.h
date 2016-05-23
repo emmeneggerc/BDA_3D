@@ -9,7 +9,12 @@
 #define SOURCES_FDC1004_H_
 
 #include <stdint.h>
+#include "Detection.h"
 
+uint8_t FDC_Init(void);
+uint8_t FDC_ReadMeasurmentResults(int32_t *result);
+uint8_t FDC_ReadRawValues(struct cap_val *data);
+float FDC_Calc_Fixpoint(uint16_t val);
 
 enum FDC_regAddr {
 
@@ -39,8 +44,7 @@ enum FDC_regAddr {
 
 // registers from 0x15 to 0xFD are reserved and should not be written to
 
-uint8_t FDC_Init(void);
-uint8_t FDC_ReadMeasurmentResults(uint32_t *result);
+
 
 
 

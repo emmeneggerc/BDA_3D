@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../Sources/Application.c \
+../Sources/Detection.c \
 ../Sources/Events.c \
 ../Sources/FDC1004.c \
 ../Sources/SH7776.c \
@@ -13,6 +14,7 @@ C_SRCS += \
 
 OBJS += \
 ./Sources/Application.o \
+./Sources/Detection.o \
 ./Sources/Events.o \
 ./Sources/FDC1004.o \
 ./Sources/SH7776.o \
@@ -21,6 +23,7 @@ OBJS += \
 
 C_DEPS += \
 ./Sources/Application.d \
+./Sources/Detection.d \
 ./Sources/Events.d \
 ./Sources/FDC1004.d \
 ./Sources/SH7776.d \
